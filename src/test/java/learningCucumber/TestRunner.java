@@ -6,7 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources",
         glue = "learningCucumber",
-        plugin = {"pretty"}
+        plugin = {"pretty","html:target/cucumber-reports"},
+        monochrome = true
 
 )
 
